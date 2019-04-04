@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en" class = "Index">
+
+    <head>
+
+        <meta name=”description” content="Web where you can find information about the developer Jorge Bárcena Lumbreras">
+        <meta name=”robots” content= "Index, Follow">
+        <meta name=author content="Jorge Bárcena Lumbreras">
+        <meta name="viewport" content =" width=device-width" >
+        <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
+        <script src="js/acciones.js"></script>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="FavIcon.ico" />
+        <link href="CSS/estilos.css" type="text/css" rel="stylesheet">
+        <title>Jorge Bárcena</title>
+    </head>
+
+    <body>
+
+        <div class="Menu">
+
+            <ul class = "ListaMenu">
+                <li class = Logo onclick='cambiarPagina(document.getElementById("PaginaInicio"))'> <a href="#PaginaInicio"> <img id = LogoImg src="Media/Iconos/0.png" alt = "Logo"> </a> </li>
+                <li id ="Hamburgesa"  onclick = 'abrir(document.getElementById("EnlacesIconos"));' ><img src="Media/Iconos/Hamburgesa.png"  alt = "Menu Desplegable"></li>
+            </ul>
+
+            <ul class = "Navegacion" id = "EnlacesIconos">
+                <li class = Icono onclick='cambiarPagina(document.getElementById("PaginaInicio"))'> <a href="#PaginaInicio"> <img src="Media/Iconos/1.png"  alt = "Inicio"> </a> </li>
+                <li class = Icono  onclick='cambiarPagina(document.getElementById("PaginaAboutMe"))'> <a href="#PaginaAboutMe"> <img src="Media/Iconos/2.png"  alt = "Sobre mi"> </a> </li>
+                <li class = Icono  onclick='cambiarPagina(document.getElementById("PaginaExperience"))'> <a href="#PaginaExperience"> <img src="Media/Iconos/3.png"  alt = "Experiencia"> </a> </li>
+                <li class = Icono  onclick='cambiarPagina(document.getElementById("PaginaMywork"))'> <a href="#PaginaMywork"> <img src="Media/Iconos/4.png"  alt = "Mi trabajo"> </a> </li>
+                <li class = Icono  onclick='cambiarPagina(document.getElementById("PaginaContacto"))'> <a href="#PaginaContacto"> <img src="Media/Iconos/5.png"  alt = "Contacto"> </a> </li>
+            </ul>
+
+
+            <ul class = "RRPPLista">
+             <!--   <li class = "IconoRedesSociales" id = "Español" Onclick='cambiarIdioma(document.getElementById("Español"))'>  <img src="Media/Iconos/esp.png"  alt = "Español">  </li>
+                <li class = "IconoRedesSociales" id = "Ingles" Onclick='cambiarIdioma(document.getElementById("Ingles"))'>  <img src="Media/Iconos/ing.png"  alt = "Ingles"> </li> -->
+                <li class = IconoRedesSociales> <a href="https://www.facebook.com/JorgeBarcenaLumbreras"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-01.png"  alt = "Facebook"> </a> </li>
+                <li class = IconoRedesSociales> <a href="https://www.linkedin.com/in/jorge-b-500419103"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-02.png"  alt = "Linkedin"> </a> </li>
+                <li class = IconoRedesSociales> <a href="https://www.instagram.com/jorge_barcena3/"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-03.png"  alt = "Instagram"> </a> </li>
+                <li class = IconoRedesSociales> <a href="https://twitter.com/Jorge_barcena3?lang=es"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-04.png"  alt = "Twitter"> </a> </li>
+                <li>
+            </ul>
+        </div>
+
+        <!-- PAGINA -->
+
+        <div class = "Paginas" id = "PaginaInicio" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <div class = ContenidoTotal>
+                <div class = "ContenidoTexto">
+                    <p class="TituloDeWeb">Hi, <br> I'm Jorge Bárcena <br>Videogames developer.</p>
+                    <h2>Welcome to my website, here you will be able to find  my best works <br>and contact with me.<br><br><br>Developed with HTML5, CSS3 and JS by me</h2>
+                    <button class = "BtnContacto" onclick='cambiarPagina(document.getElementById("PaginaContacto"))' href= #PaginaContacto>
+                        CONTACT ME!       </button>     
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGINA -->
+
+        <div class = "Paginas" id = "PaginaAboutMe" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <div class = ContenidoTotal>
+                <div class = "ContenidoTexto">
+                    <p class ="TituloDeSeccion">About Me</p>
+                    <h2 class = "ParrafoSeccion" id = "Dispositivomovil">
+                        My interest in the programming appeared since I was very small. When I was 5 years old, I began to take my first steps with a computer. Little by little I discovered that the world of technology, and later programming that will be my passion and what I really wanted to dedicate myself to.
+                        <br>
+                        <br>
+                        When I had to choose a university degree, I ended up deciding on the degree of "Design and development", taught by ESNE (Camilo Jose Cela University) in Madrid. During this period I discovered the programming, and in short, I discovered that programming was what I really wanted to dedicate to the world of the profession.
+                        <br>
+                        <br>
+                        Currently, I am studying the 2nd year of this degree. And so far I have learned several programming scripts such as C ++, C #, Java, HTML5, CSS, JS ... In addition to video game engines such as Unity or Unreal4
+                        <br> <br>
+                        Download my CV <a href="Media/files/CV%20-%20Jorge%20Barcena.pdf">here</a>
+                         <br>
+                        Download my porfolio <a href="Media/files/Portfolio%20-%20Jorge%20Barcena.pdf">here</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGINA -->
+
+        <div class = "Paginas" id = "PaginaExperience" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <div class = ContenidoTotal>
+                <div class = "ContenidoTexto">
+                    <p class ="TituloDeSeccion">Experience and 
+                        studies
+                    </p>
+                    <h2 class = "ParrafoSeccion" id = "Dispositivomovil1">
+                        Currently, I am studying the 3 course of design and development of videogames at ESNE (Camilo José Cela University, Madrid).
+                        <br> <br>
+                        I have participated in several projects related to videogames throughout the different university courses. You can consult them in the pagina of "Mis trabajos".
+                        <br> <br>
+                        I also have the title of "Socorrismo". Currently, I play in the Madrid Division of American Football in the "Wildcats FA" team.
+                        <br> <br>
+                        I have also given private classes of subjects such as "Programming", "Web Design" ...
+                        <br> <br>
+                        Regarding musical studies, I have played the piano for 10 years, apart from having composed some musical pieces.
+                        <br> <br>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGINA -->
+
+        <div class = "Paginas" id = "PaginaMywork" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <div class = ContenidoTotalMyWork>
+                <div class="gallery">
+                    <a href="www.google.es">
+                    <img src="Media/MyWorks/ThisPortfolio.jpg" alt="Porfolio" >
+                    <div class="desc">This porfolio</div>
+                        </a>
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/Modelado3D.png" alt="Modelado3D" >
+                    <div class="desc">3D Modeling</div>
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/1.JPG" alt="Pexelart" >
+                    <div class="desc">    PixelArt   </div>
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/Animacion.gif" alt="2DAnimation" >
+                    <div class="desc">2D Animation</div>
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/2.jpg" alt="Codigo" >
+                    <div class="desc">C++, C#, C and Java code</div>
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/4.jpeg" alt="Web code" >
+                    <div class="desc">RayTracing</div>
+                </div>
+                <div class="gallery">
+                    <a href = "https://www.youtube.com/watch?v=vgwfeM6KitM" target ="_blank"><div class="desc">Films</div><img  src="Media/MyWorks/Films.jpg" alt="Films" >
+                    </a>
+
+                </div>
+                <div class="gallery">
+                    <img src="Media/MyWorks/3.JPG" alt="Forest" >
+                    <div class="desc">Clicker!</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGINA -->
+
+        <div class = "Paginas" id = "PaginaContacto" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <div class = ContenidoTotal>
+                <div class = "ContenidoFormulario">
+                    <p class ="TituloFormulario">Contact</p>
+                    <form class = "Formulario" method="post">
+                        <input type="text" id = "Name" name="Name" required class = "InputFormulario" placeholder="Your name..." >
+                        <input type="email" id = "Email" name = "E-mail" required class = "InputFormulario" placeholder="Your e-mail...">
+                        <input type="text" id = "Asunto" name="Subject" required  class = "InputFormulario" placeholder="Your subject...">
+                        <textarea name="Mensaje" id="Mensaje" required class = "InputFormulario" placeholder="Your message.."></textarea>
+                        <button onclick="checkCampos()" id = "Enviar"> Send </button>
+                    </form>
+
+                    <ul class = "RRPPListaContacto">
+                        <li class = IconoRedesSocialesContacto> <a href="https://www.facebook.com/JorgeBarcenaLumbreras"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-01.png"  alt = "Facebook"> </a> </li>
+                        <li class = IconoRedesSocialesContacto> <a href="https://www.linkedin.com/in/jorge-b-500419103"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-02.png"  alt = "Linkedin"> </a> </li>
+                        <li class = IconoRedesSocialesContacto> <a href="https://www.instagram.com/jorge_barcena3/"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-03.png"  alt = "Instagram"> </a> </li>
+                        <li class = IconoRedesSocialesContacto> <a href="https://twitter.com/Jorge_barcena3?lang=es"  target="_blank"> <img src ="Media/Iconos/RedesSociales/RRPP-04.png"  alt = "Twitter"> </a> </li>
+                        <li>
+                    </ul>
+
+                    <div class = "InformacionDeContacto">
+                        <h1>Carretera de Húmera, 39 <br>
+                            Pozuelo de Alarcón <br>
+                            Madrid, España <br>
+                            Barcenix98@gmail.com <br>
+                            692649809
+                        </h1>
+                    </div>
+                    <div class = "InformacionDeContactoPC">
+                        <h1>Carretera de Húmera, 39 <br>
+                            Pozuelo de Alarcón <br>
+                            Madrid, España <br>
+                            j.barcenalumbreras@gmail.com <br>
+                            692649809
+                        </h1>
+                    </div>
+                </div>
+
+                <iframe src="https://snazzymaps.com/embed/38781" id = "Mapa" width= "45%"  height="100%" style="border:none;"></iframe>
+
+            </div>
+        </div>
+
+        <!-- FONDO -->
+
+        <div class="ContenidoFondo" id = "ContenidoFondoId" onclick = 'cerrar(document.getElementById("EnlacesIconos"));'>
+            <img class = "Relleno" src="Media/Iconos/0.png" alt = "Imagenes de fondo">
+            <div class = "Fondo">
+                <img src="Media/Fondo/Fondo_2-01-01.png" id = "Fondo1"  alt = "Imagenes de fondo">
+                <img src = "Media/Fondo/Fondo_1-01.png" id = "Fondo2" alt = "Imagenes de fondo">
+            </div>
+        </div>
+    </body>
+</html>

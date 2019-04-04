@@ -1,0 +1,806 @@
+@font-face{
+    font-family: 'Berlin Sans FB';
+    src:local('Berlin Sans FB'),        
+        url(BRLNSR.tff) format('truetype');
+}
+
+*{              
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Berlin Sans FB', sans-serif;
+    box-sizing: border-box;
+}
+
+.ContenidoTotalTrabajos{
+    margin-left: 65px;
+    width: 100%;
+    height: 100vh;
+}
+
+.Paginas{
+    /* visibility: hidden; */
+    display: none;
+    position: fixed;
+    z-index: 10;
+}
+
+#PaginaInicio{
+    display: block;
+    /*visibility: visible;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #242527;
+}
+
+#Hamburgesa{
+    display: none;
+    visibility: hidden;
+}
+
+.Menu{
+    background-color: #010002;
+    width: 70px;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    z-index: 30;
+}
+
+.Menu ul{
+    overflow: visible;
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.Navegacion{
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+.Idiomas{
+    
+     position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 5em;
+
+}
+
+.Idiomas li{
+    
+    margin: 0;
+    padding: 0;
+    display: inline;
+
+}
+
+
+.Idiomas img{
+    
+    display: inline-block;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#EnlacesIconos{
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 385px;
+    top: 25%;
+    width: 100%;
+    padding: 0 4px;
+}
+
+.Icono img {
+    display: block;
+    width: 100%;
+    padding-bottom: 35%;
+}
+
+.Icono:hover img {
+    opacity: 0.85;
+}
+
+#LogoImg{
+    width: 90%;
+    display: block;
+    padding: 10px 3px;
+    margin-top: 2px;
+}
+
+#LogoImg:hover{
+    opacity: 0.85;
+}
+
+.RRPPLista{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 5em;
+}
+
+.RRPPLista li{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.IconoRedesSociales img{
+    display: inline-block;
+    width: 45%;
+    padding: 0;
+    margin: 0;
+}
+
+.IconoRedesSociales:hover img{
+    opacity: 0.85;
+}
+
+.ContenidoFondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.Fondo{
+    height: 100%;
+    overflow: visible;
+}
+
+#Fondo1{
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 5%;
+    z-index: -2;
+}
+
+#Fondo2{
+    z-index: 1;
+    float: right;
+    width: 30%;
+    margin-top: 30%
+}
+
+.ContenidoTexto{
+    line-height: 53px;
+    font-size: 25px;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    z-index: 3;
+
+    position: absolute;
+    text-align: left;
+    width: 100vh;
+}
+
+.TituloDeWeb{
+    color: #E0E0E0;
+    font-size: 48px;
+}
+
+.ContenidoTexto h2{
+    line-height: 20px;
+    font-size: 18px;
+    color: #C6C6C5;
+    height: 100%;
+}
+
+.BtnContacto{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 280px;
+    height: 55px; 
+    text-decoration: none;
+    border: 6px solid #0D4E7E;
+    float: left;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Berlin Sans FB', sans-serif;
+    color: #DCDEE1;
+    font-size: 35px;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #0D4E7E;
+    border: 0px;
+    padding-top: 3px;
+}
+
+.BtnContacto:hover{
+    background-color: #0D4E7E;
+}
+
+.Relleno{
+    width: 20%;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 15%;
+    transform: rotate(25deg);
+}
+
+.TituloDeSeccion{
+    color: #2582B0;
+    font-size: 75px;
+}
+
+.ParrafoSeccion{
+    color: #CCCCCC;
+    margin-top: 2em;
+    height: 100%;
+    width: 25em;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+.ParrafoSeccion a:link{
+    color: #CCCCCC;
+}
+
+.ParrafoSeccion a:visited{
+    color: #CCCCCC;
+}
+
+
+#PaginaContacto{
+    width: 100%;
+}
+
+.ContenidoFormulario{
+    line-height: 53px;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 10vh;
+    z-index: 3;
+    position: absolute;
+    text-align: left;
+    width: 40%;
+    height: 100%;
+}
+
+.Formulario{
+    margin-top: 7vh;
+    margin-left: 5vh;
+}
+
+.InputFormulario{
+    display: block;
+    margin: 2px 0;
+}
+
+#Name, #Email, #Asunto, #Mensaje, #Enviar{
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box; 
+    background-color: #3B3C3E;
+    color:#C6C6C5;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 2%;
+}
+
+#Enviar{
+    float: right;
+    border: 3px solid #0D4E7E;
+    border-radius: 15px;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #0D4E7E;
+    border: 0px;
+    width: 50%;
+    font-size: 35px;
+    padding: 2%;
+}
+
+#Enviar:hover{
+    background-color: #0D4E7E;
+}
+
+#Mapa{
+    float: right;
+    width: 45%;
+    height: 100vh;
+    overflow: visible;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.ContenidoTotal{
+    height: 100vh;
+}
+
+.TituloFormulario{
+    color: #2582B0;
+    font-size: 75px;
+}
+
+.cambioDePagina{
+    visibility: hidden;
+}
+
+.InformacionDeContacto{
+    display: none;
+}
+
+.InformacionDeContactoPC{
+    display: inline-block;
+    background-color: #1A1E21;
+    border-radius: 10%;
+    padding: 5%;
+    position: absolute;
+    z-index: 3;
+    color: #2582B0;
+    font-size: 0.5em;
+    line-height: 2.3em;
+    overflow: visible;
+    left: 120%;
+    bottom: 70%;
+}
+
+.ContenidoTotalMyWork{
+    margin-left: 65px;
+    z-index: 2;
+}
+
+.gallery {
+    display:inline-block;
+    float: left;
+    width: 25%;
+    height: 60%;
+    background-color: #242527;
+    overflow: hidden;
+    margin: 0;
+}
+
+.gallery img {
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50vh;
+}
+
+.gallery img:hover{
+    z-index: -6;
+    transition:all .5s ease-in-out;   
+    transform:scale(1.1);
+    opacity: 0.5;
+}
+
+.desc {
+
+
+    background-color: #2582B0;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 10;
+    font-size: 1.2em;
+    text-align: center;
+    color:#242527;
+
+    margin-top: 12.5%;
+    margin-left: 9%;
+    padding: 1%;
+    visibility: hidden;
+    display: none;
+
+
+
+
+}
+
+.RRPPListaContacto{
+    display: none;
+    visibility: hidden;
+
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 572px){
+
+    Body{
+        display: block;
+        overflow-x:auto;
+        overflow-y: auto;
+    }
+
+    *{              
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Berlin Sans FB', sans-serif;
+        box-sizing: border-box;
+        line-height: 1em;
+    }
+
+    .InformacionDeContactoPC{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .Menu{
+        background-color: #010002;
+        width: 100%;
+        height: 130px;
+        position: fixed;
+        z-index: 20;
+    }
+    #Hamburgesa{
+        display: block;
+    }
+    #Hamburgesa img{
+        width: 120px;
+        padding-top: 32px;
+        margin-right: 25px;
+        float: right;
+        visibility: visible;
+    }
+    #LogoImg{
+        float: left;
+        width: 97px;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .Menu ul{
+        overflow: visible;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #EnlacesIconos{
+        background-color: #010002;
+        overflow: hidden;
+        z-index: 4;
+        height: 100px;
+        top: 130px;
+        width: 0%;
+        padding: 0;
+        text-align: center;
+    }
+
+    #EnlacesIconos li{
+        display: inline;
+        margin: 1% 1%;
+        margin-bottom: 2%;
+        padding: 0;
+    }
+
+    .Icono img {
+        display: inline-block;
+        width: 90px;
+        padding: 0;
+    }
+
+    .RRPPLista{
+        display: none;
+        visibility: hidden;
+    }
+
+    .RRPPLista li{
+        visibility: hidden;
+    }
+
+
+    .ContenidoTexto{
+        margin-left: 13px;
+        margin-top:8em;
+        margin-right: 13px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .Paginas{
+        position: relative;
+        height: 100px;
+    }
+
+    .ContenidoTexto h2{
+        margin-top: 10px;
+        width: 95vh;
+        line-height: 1em;
+        font-size: 3em;
+        position: relative;
+    }
+
+    .BtnContacto{
+        margin: 0;  
+        margin-top: 50px;
+        width: 485px;
+        height: 100%; 
+        border: 2px solid #0D4E7E;
+        border-radius: 50px;
+        font-family: 'Berlin Sans FB', sans-serif;
+        font-size: 55px; 
+        padding: 5%;
+        box-shadow: inset 0 0 0 7px #0D4E7E;
+    }
+
+    .Relleno{
+        visibility: hidden;
+    }
+
+    .ContenidoFondo{
+        width: 100vh;   
+        z-index: -1;
+        position: absolute;       
+    }
+
+    .Fondo{
+        height: 100%;
+        overflow: visible;
+        display: block;
+    }
+
+    #Fondo1{
+        width: 100%;
+        margin-left: 1em;
+        margin-top: 120px;
+        z-index: -2;
+    }
+
+    #Fondo2{
+        z-index: 1;
+        top: 5000px;
+        width: 20%;
+        margin-top: 0;
+        display: block;
+    }
+
+    .ContenidoTotal{
+        width: 100vh;
+        height: 100%;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .TituloDeSeccion{
+        color: #2582B0;
+        font-size: 6em;
+        line-height: 80%;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .TituloDeWeb{
+        color: #E0E0E0;
+        font-size: 432%;
+        line-height: 70px;
+        margin-bottom: 30px;
+        width: 100vh;
+    }
+
+    #Dispositivomovil{
+        color: #CCCCCC;
+        margin-top: 22px;
+        height: 110vh;
+        overflow: visible;
+        line-height: 1em;
+        margin-bottom: 50px;
+        padding: 0 2%;
+        font-size: 3em;
+    }
+
+    #Dispositivomovil1{
+        color: #CCCCCC;
+        margin-top: 22px;
+        height: 110vh;
+        overflow: visible;
+        line-height: 1em;
+        margin-bottom: 50px;
+        padding: 0 2%;
+        font-size: 3em;
+    }
+
+    .ContenidoFormulario{
+        line-height: 53px;
+        font-size: 25px;
+        margin-left: 0%;
+        margin-top: 125px;
+        z-index: 3;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Formulario{
+        margin-left: 10vh;
+        text-align: center;
+    }
+
+    .InputFormulario{
+        display: block;
+        margin: 2px 0;
+    }
+
+    #Name, #Email, #Asunto, #Mensaje, #Enviar{
+        margin: 0;
+        background: rgba(255,255,255,.1);
+        border: none;
+        border-radius: 5px;
+        font-size: 40px;
+        padding: 20px;
+        width: 80vh;
+        box-sizing: border-box; 
+        background-color: #3B3C3E;
+        color:#C6C6C5;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        margin-bottom: 20px;
+    }
+
+    #Enviar{
+        margin: 0;
+        position: relative;
+        width: 50vh;
+        margin-left: 0;
+        float: left;
+        margin-left: 30vh;
+    }
+
+    #Enviar:hover{
+        background-color: #0D4E7E;
+    }
+
+    #Mapa{
+        visibility: hidden;
+        display: none;
+    }
+
+    .RRPPListaContacto{
+        visibility: visible;
+        display: inline-block;
+        background-color: #1A1E21;
+        border-radius: 10%;
+        padding: 5%;
+        position: absolute;
+        z-index: 3;
+        color: #2582B0;
+        position: relative;
+        margin: 0;
+        overflow: visible;
+        margin-left: 10vh;
+        width: 80vh;
+        height: 25vh;
+        padding: 3%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        overflow: hidden;
+
+
+    }
+
+    .IconoRedesSocialesContacto{
+        display: inline-block;
+        width: 24%;
+
+        position: relative;
+        margin-top: 2%;
+
+    }
+    .IconoRedesSocialesContacto img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    .InformacionDeContacto{
+        display: block;
+        background-color: #1A1E21;
+        border-radius: 10%;
+        padding: 5%;
+        position: absolute;
+        z-index: 3;
+        color: #2582B0;
+        position: relative;
+        margin: 0;
+        overflow: visible;
+        margin-left: 10vh;
+        width: 80vh;
+        height: 13em;
+        padding: 3%;
+        margin-bottom: 50px;
+    }
+
+    .InformacionDeContacto h1{
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .TituloFormulario{
+        margin-left: 10vh;
+        color: #2582B0;
+        font-size: 4em;
+        line-height: 80%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .ContenidoTotalMyWork{
+        margin: 0;
+        margin-top: 130px;
+        z-index: 2;
+        width: 100vh;
+    }
+
+
+    .gallery {
+        display:inline-block;
+        float: left;
+        width: 50%;
+        height: 100%%;
+        background-color: #242527;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .gallery img {
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .gallery img:hover{
+        z-index: -6;
+        transition:all .5s ease-in-out;   
+        transform:scale(1.1);
+        opacity: 0.5;
+    }
+
+    .desc {
+
+
+        background-color: #2582B0;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 10;
+        font-size: 1.2em;
+        text-align: center;
+        color:#242527;
+
+        margin-top: 12.5%;
+        margin-left: 9%;
+        padding: 1%;
+        display: none;
+        visibility: hidden;
+
+
+
+
+    }
+    
+    
